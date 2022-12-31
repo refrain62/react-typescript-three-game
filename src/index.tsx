@@ -8,9 +8,10 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  // staticモードでは、開発時のみ処理が2回実行される。今回の開発では2回実行されるとうまく動かないのでコメントアウトする
+//  <React.StrictMode>
     <App />
-  </React.StrictMode>
+//  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
